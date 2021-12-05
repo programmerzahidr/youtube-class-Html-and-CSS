@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+marquee{
+    color: #eeff00;
+    font-size: 25px;
+    text-shadow: 1px 2px 3px cyan;
+}
+q:lang(no){
+    quotes: "😍" "😍";
+}
+
+.stk{
+    width: 350px;
+}
+.stk::after{
+    content: "";
+    background-image: linear-gradient(#ff0000, orange);
+    width: 0%;
+    height: 5px;
+    display: block;
+    transition: 1s;
+    
+}
+.stk:hover::after{
+    width: 100%;
+}
+
+.banner{
+    background: url(https://cdn.pixabay.com/photo/2014/11/16/15/15/field-533541__340.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: justify;
+    padding: 5px;
+    overflow: hidden;
+}
+.second{
+    background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
+    border: 10px solid #00fff2;
+    text-align: justify;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+.second-banner .text{
+    margin-top: 100px;
+    margin-left: 50px;
+    line-height: 40px;
+}
+.second-banner{
+    background: linear-gradient( to left, #00000000, #0088f7b2 85%), url(https://cdn.pixabay.com/photo/2014/02/28/16/45/mountains-276995__340.jpg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+}
+
+.border{
+    display: flex;
+    justify-content: space-around;
+}
+.box1{
+    background-color: lawngreen;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 12px solid blue;
+}
+.box2{
+    background-color: #00fcc5;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 12px solid;
+    border-image: linear-gradient(blue, yellow);
+    border-image-slice: 10;
+}
+.box3{
+    background-color: #c5fc00;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 12px solid blue;
+}
+.box4{
+    background-color: #d200fc;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 12px solid blue;
+}
+
+.zahid{
+    max-width: 800px;
+    height: 200px;
+    background: brown;
+    color: #ffff;
+}
+.hasan{
+    width: 800px;
+    height: 200px;
+    background: chartreuse;
+    color: #000000;
+}
+
+.positioning, .boxx1{
+    width: 500px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    border-right: 15px solid;
+    border-image: linear-gradient(#1145f1, #7cf519, #fc00ff, #cfde00);
+    border-image-slice: 5;
+}
+.positioning, .boxx2{
+    width: 250px;
+    height: 100px;
+    background-color: #1900ff;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.block{
+    color: #1900ff;
+    width: 100%;
+    height: 100px;
+}
+.myp{
+    display: none;
+}
+.block:hover .myp{
+    display: block;
+}
+
+.overflow{
+    background: #54565a;
+    height: 300px;
+    overflow: scroll;
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: justify;
+    color: #0ccf0c;
+}
+
+.pseudo{
+    background-color: #000000;
+    color: #ffff;
+}
+.pseudo-element::first-letter{
+    font-size: 50px;
+    background: #1900ff;
+    color: #dfdfdf;
+}
+.pseudo-element::first-line{
+    color: #cefc00;
+}
+
+.list{
+    margin: 20px;
+}
+::selection{
+    background-color: black;
+    color: whitesmoke;
+}
+::marker{
+    color: blue;
+    font-size: 50px
+}
+
+.opacity img{
+    opacity: 0.1;
+}
+.opacity img:hover{
+    opacity: 1;
+}
+
+
